@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include, re_path
-
+# import to exercise2
 # from myapp.views import main, url_articles, url_articles_archive, url_users
+
+# import to exercise3
 from myapp.views import main, user_number, regex, ua_number
 
 # <<<Exercise 2>>>
@@ -36,7 +38,6 @@ urlpatterns = [
     path('users/<int:user_numb>', user_number, name='user_number'),
     re_path(r'^(?P<text>[0-9a-fA-F]{4}-[0-9a-fA-F]{6}$)', regex),
     re_path(r'^(?P<numb>050\d{7}|09[3,5,6,7,8,9]\d{7}|06[3,6,7,8]\d{7}|073\d{7}$)', ua_number),
-    # re_path('^0[1-9]|[12][0-9]|3[01]$', ua_number),
 
 ]
 
