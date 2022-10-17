@@ -36,6 +36,7 @@ urlpatterns = [
     path('', main),
     path('article/', include('myapp.urls')),
     path('users/<int:user_numb>', user_number, name='user_number'),
+    path('users', user_number, name='user_number'),
     re_path(r'^(?P<text>[0-9a-fA-F]{4}-[0-9a-fA-F]{6}$)', regex),
     re_path(r'^(?P<numb>050\d{7}|09[3,5,6,7,8,9]\d{7}|06[3,6,7,8]\d{7}|073\d{7}$)', ua_number),
 
