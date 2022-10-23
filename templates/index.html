@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="padding: 10px; margin-bottom: 20px; background-color: yellow"> Вы на главной странице</div>
+<div>
+    <a href="{% url 'rand_id' number %}">Cсылка на статью со случайным ID-шником</a>
+</div>
+    <br>
+<div>
+    <a href="{% url 'rand_text' text %}">Cсылка на статью со случайным набором символов</a>
+</div>
+    <br>
+{% endblock %}

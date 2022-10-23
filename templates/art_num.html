@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% if art_number|divisibleby:2 %}
+        <span>число {{ art_number }} является ЧЁТНЫМ</span>
+    {% else %}
+        <span>число {{ art_number }} является НЕЧЁТНЫМ</span>
+    {% endif %}
+    {% if stext %}
+        {% include 'art_numtext.html' %}
+
+    {% endif %}
+{% endblock %}
