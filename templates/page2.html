@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Создать 5 комментариев с разным текстом, Хотя бы один должен начинаться со слова "Start", хоть один в середине
+    должен иметь слово "Middle", хоть один должен заканчиваться словом "Finish".</h3>
+
+<p>
+    Comment.objects.bulk_create([<br>
+    Comment(text="start это новый созданный комент №1", article_id=14, writer_id=34),<br>
+... Comment(text="это новый созданный комент №2", article_id=14, writer_id=34),<br>
+... Comment(text="это новый созданный middle комент №3", article_id=14, writer_id=34),<br>
+... Comment(text="это новый созданный комент №4", article_id=14, writer_id=34),<br>
+... Comment(text="это новый созданный комент №5 finish", article_id=14, writer_id=34)<br>
+    ])
+</p>
+</body>
+</html>

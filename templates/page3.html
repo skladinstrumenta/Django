@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Переписать сейв комментария так, что бы при создании дата менялась бы на год назад (если сегодня 20 декабря 2021,
+    должна выставляться 20 декабря 2020), изменение комментариев не затрагивать.</h3>
+
+<p>
+        def save(self, **kwargs):<br>
+        self.date_comm = timezone.now() - timedelta(days=365)<br>
+        super().save(**kwargs)<br><br><br>
+    (Прописано в blog.models.py (38-40 строки)
+</p>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Удалить все комментарии у которых в тексте есть буква "k", но не удалять если есть буква "с".</h3>
+<p>
+    Comment.objects.filter(text__icontains="k").exclude(text__icontains="c").delete()
+</p>
+</body>
+</html>
