@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Получить 5 последних написанных комментариев (именно текст)</h3>
+<ol>
+{% for com in comment_list %}
+<li>{{ com.text }}</li>
+{% endfor %}
+</ol>
+</body>
+</html>

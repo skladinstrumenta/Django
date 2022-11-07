@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Получить первые 2 комментария по дате создания к статье у которой имя автора последнее по алфавиту.</h3>
+<ol>
+{% for com in comment_list %}
+<li>{{ com.text }}</li>
+{% endfor %}
+</ol>
+</body>
+</html>
